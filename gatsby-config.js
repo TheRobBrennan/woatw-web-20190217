@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter - Dimension V2",
-    author: "Hunter Chang",
-    description: "A Gatsby.js V2 Starter based on Dimension by HTML5 UP"
+    title: "[PREVIEW] Wyatt Olney & The Wreckage | Seattle WA",
+    author: "Rob Brennan",
+    description: "A concept site for one of Seattle's hard rock bands."
   },
   plugins: [
     'gatsby-plugin-react-helmet',
