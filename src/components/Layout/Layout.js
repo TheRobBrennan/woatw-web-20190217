@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { StaticQuery } from 'gatsby'
-import { siteTitleQuery } from '../../graphql/queries/siteTitleQuery'
+import { StaticQuery, graphql } from 'gatsby'
 import { renderLayout } from './lib/renderLayout'
 
 import '../../assets/scss/main.scss'
@@ -9,6 +8,15 @@ import '../../assets/scss/main.scss'
 const Layout = ({ children, location }) => {
 
   let content;
+  const siteTitleQuery = graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `
 
   if (location && location.pathname === '/') {
     content = (
