@@ -32,7 +32,9 @@
     "docker:nuke": "npm run docker:nuke:containers && docker rmi -f $(docker images -q)",
     "docker:nuke:containers": "docker rm $(docker ps -aq)",
     "docker:refresh": "npm run docker:down && npm run docker:up",
-    "docker:refresh:clean": "npm run docker:down && npm run docker:up:clean"
+    "docker:refresh:clean": "npm run docker:down && npm run docker:up:clean",
+    "deploy": "now",
+    "now-build": "npm run build"
   },
   "devDependencies": {
     "prettier": "^1.14.2"
