@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "name": "woatw-web-20190217",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "public" }
+    }
+  ]
+}
