@@ -4,7 +4,7 @@ import { StaticQuery } from 'gatsby'
 import { siteTitleQuery } from '../../graphql/queries/siteTitleQuery'
 import { renderLayout } from './lib/renderLayout'
 
-import '../assets/scss/main.scss'
+import '../../assets/scss/main.scss'
 
 const Layout = ({ children, location }) => {
 
@@ -29,7 +29,7 @@ const Layout = ({ children, location }) => {
   return (
     <StaticQuery
       query={siteTitleQuery}
-      render={renderLayout(data, content)}
+      render={data => renderLayout(data, content)}
     />
   )
 }
