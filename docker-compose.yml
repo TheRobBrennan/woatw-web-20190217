@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  'woatw-20190217-web':
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: 'woatw-20190217-web'
+    command: npm start
+    volumes:
+      - ./src:/usr/src/src
+    ports:
+      - "8000:8000"
