@@ -3,7 +3,7 @@ import Layout from '../components/Layout/Layout'
 
 import Header from '../components/Header'
 import Main from '../components/Main'
-import Footer from '../components/Footer'
+import Footer from '../components/Footer/Footer'
 
 class IndexPage extends React.Component {
   constructor(props) {
