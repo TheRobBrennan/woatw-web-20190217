@@ -19,11 +19,20 @@
   ],
   "license": "MIT",
   "scripts": {
+    "postinstall": "npm rebuild node-sass",
     "start": "npm run develop",
-    "build": "gatsby build",
-    "develop": "gatsby develop",
+    "build": "npx gatsby build",
+    "develop": "npx gatsby develop -H 0.0.0.0",
     "format": "prettier --write '**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docker:up": "docker-compose up -d && docker-compose logs -f",
+    "docker:up:clean": "docker-compose up --remove-orphans --build -d && docker-compose logs -f",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f",
+    "docker:nuke": "npm run docker:nuke:containers && docker rmi -f $(docker images -q)",
+    "docker:nuke:containers": "docker rm $(docker ps -aq)",
+    "docker:refresh": "npm run docker:down && npm run docker:up",
+    "docker:refresh:clean": "npm run docker:down && npm run docker:up:clean"
   },
   "devDependencies": {
     "prettier": "^1.14.2"
