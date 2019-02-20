@@ -70,6 +70,15 @@ class Main extends React.Component {
         <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Contact</h2>
           <span className="image main"><img src={bandPhoto} alt="2019.01.05 Backstage at El Corazon - Seattle WA" /></span>
+          <h3 className="minor">Wyatt Olney &amp; The Wreckage</h3>
+          <strong>Wyatt Olney</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Lead vocals &amp; guitar
+          <br />
+          <strong>Kyle Gibboney</strong> | Vocals &amp; guitar
+          <br />
+          <strong>Willie Nelson</strong>&nbsp;&nbsp;&nbsp; | Vocals &amp; bass guitar
+          <br />
+          <strong>Rob Brennan</strong>&nbsp;&nbsp;&nbsp; | Drums
+          <p></p>
           <ul className="icons">
             <li><a href="https://www.facebook.com/wyattolneyandthewreckage/" target="_blank" className="icon fa-facebook"><span className="label">Facebook</span></a></li>
             <li><a href="https://www.instagram.com/wyattolneyandthewreckage/" target="_blank" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
