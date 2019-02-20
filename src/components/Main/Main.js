@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 
 // Images
 import bandPhoto from '../../images/woatw/20190105-backstage-el-corazon-seattle-wa.jpg'
+import posterForUpcomingShow from '../../images/woatw/20190223-wyatt-olney-and-the-wreckage-tony-vs-everett-wa.jpg'
 
 class Main extends React.Component {
   render() {
@@ -11,6 +12,11 @@ class Main extends React.Component {
 
     return (
       <div ref={this.props.setWrapperRef} id="main" style={this.props.timeout ? {display: 'flex'} : {display: 'none'}}>
+
+        <article id="upcoming-shows" className={`${this.props.article === 'upcoming-shows' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+          <span className="image main"><img src={posterForUpcomingShow} alt="2019.02.23 Tony V's - Everett WA" /></span>
+          {close}
+        </article>
 
         <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Contact</h2>
