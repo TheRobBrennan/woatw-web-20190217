@@ -11,14 +11,11 @@ const Header = (props) => (
                 <h1>Wyatt Olney &amp; The Wreckage</h1>
             </div>
         </div>
-        {/* <nav>
+        <nav>
             <ul>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('intro')}}>Intro</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('work')}}>Work</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('about')}}>About</a></li>
                 <li><a href="javascript:;" onClick={() => {props.onOpenArticle('contact')}}>Contact</a></li>
             </ul>
-        </nav> */}
+        </nav>
     </header>
 )
 
