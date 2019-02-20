@@ -1,6 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+// Images
+import bandPhoto from '../../images/woatw/20190105-backstage-el-corazon-seattle-wa.jpg'
+
+// TODO: Remove these default image imports (demo purposes only)
 import pic01 from '../../images/pic01.jpg'
 import pic02 from '../../images/pic02.jpg'
 import pic03 from '../../images/pic03.jpg'
@@ -38,7 +42,8 @@ class Main extends React.Component {
 
         <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Contact</h2>
-          <form method="post" action="#">
+          <span className="image main"><img src={bandPhoto} alt="2019.01.05 Backstage at El Corazon - Seattle WA" /></span>
+          {/* <form method="post" action="#">
             <div className="field half first">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" />
@@ -55,7 +60,7 @@ class Main extends React.Component {
               <li><input type="submit" value="Send Message" className="special" /></li>
               <li><input type="reset" value="Reset" /></li>
             </ul>
-          </form>
+          </form> */}
           <ul className="icons">
             <li><a href="https://www.facebook.com/wyattolneyandthewreckage/" target="_blank" className="icon fa-facebook"><span className="label">Facebook</span></a></li>
             <li><a href="https://www.instagram.com/wyattolneyandthewreckage/" target="_blank" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
