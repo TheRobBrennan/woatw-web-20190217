@@ -25,6 +25,12 @@ module.exports = {
       options: {
         trackingId: "UA-68343119-5",
       },
-    }
+    },
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint: 'https://woatw.us11.list-manage.com/subscribe/post?u=6ebf45cada6d638457bc51a30&amp;id=64b10a0a10', // Find the POST URL for signing up to your list with an embedded form
+      },
+    },
   ],
 }

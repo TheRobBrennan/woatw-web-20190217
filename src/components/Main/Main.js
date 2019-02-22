@@ -5,6 +5,9 @@ import PropTypes from 'prop-types'
 import bandPhoto from '../../images/woatw/20190105-backstage-el-corazon-seattle-wa.jpg'
 import posterForUpcomingShow from '../../images/woatw/20190223-wyatt-olney-and-the-wreckage-tony-vs-everett-wa.jpg'
 
+// Components
+import Subscribe from '../Subscribe'
+
 class Main extends React.Component {
   render() {
 
@@ -78,6 +81,8 @@ class Main extends React.Component {
           <strong>Willie Nelson</strong>&nbsp;&nbsp;&nbsp; | Vocals &amp; bass guitar
           <br />
           <strong>Rob Brennan</strong>&nbsp;&nbsp;&nbsp; | Drums
+          <p></p>
+          <Subscribe />
           <p></p>
           <ul className="icons">
             <li><a href="https://www.facebook.com/wyattolneyandthewreckage/" target="_blank" className="icon fa-facebook"><span className="label">Facebook</span></a></li>
