@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "[PREVIEW] Wyatt Olney & The Wreckage | Seattle WA",
+    title: "Wyatt Olney & The Wreckage | Seattle WA",
     author: "Rob Brennan",
     description: "A concept site for one of Seattle's hard rock bands."
   },
