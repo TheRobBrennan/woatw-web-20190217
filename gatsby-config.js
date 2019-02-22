@@ -25,6 +25,12 @@ module.exports = {
       options: {
         trackingId: "UA-68343119-5",
       },
-    }
+    },
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint: 'https://therobbrennan.us11.list-manage.com/subscribe/post?u=6ebf45cada6d638457bc51a30&amp;id=0d1a12850b', // Find the POST URL for signing up to your list with an embedded form
+      },
+    },
   ],
 }
