@@ -46,7 +46,8 @@ export default class Subscribe extends React.Component {
     if (!this.state.email) {
       this.setState({
         status: `error`,
-        msg: 'Please enter valid email!'
+        msg:
+          'Please enter an email address if you want to subscribe to our newsletter.'
       })
     } else {
       this.setState({
@@ -66,29 +67,24 @@ export default class Subscribe extends React.Component {
         {this.state.status === `success` ? (
           <div>Thank you! Youʼll receive your first email shortly.</div>
         ) : (
-          <span>
-            <span>
-              Subscribe to our mailing list!
-            </span>
+          <div>
             <form id='email-capture' method='post' noValidate>
-              <span>
-                <input
-                  style={{ color: 'black' }}
-                  placeholder='you@email.com'
-                  onChange={this._handleEmailChange}
-                  required
-                />
-                <button
-                  className='icon-mail'
-                  type='submit'
-                  onClick={this._handleFormSubmit}
-                />
-                {this.state.status === `error` && (
-                  <span dangerouslySetInnerHTML={{ __html: this.state.msg }} />
-                )}
-              </span>
+              Please enter your e-mail address if you would like to subscribe to our newsletter
+              <br/>
+              <input
+                style={{ backgroundColor: 'black' }}
+                onChange={this._handleEmailChange}
+                required
+              />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <button onClick={this._handleFormSubmit}>
+                Subscribe
+              </button>
+              {this.state.status === `error` && (
+                <div dangerouslySetInnerHTML={{ __html: this.state.msg }} />
+              )}
             </form>
-          </span>
+          </div>
         )}
       </span>
     )
