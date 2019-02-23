@@ -1,11 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: "Wyatt Olney & The Wreckage | Seattle WA",
+    title: "Wyatt Olney & The Wreckage",
+    description: "Seattle WA",
     author: "Rob Brennan",
-    description: "Hard rock from Seattle, WA",
     siteUrl: "https://www.woatw.com",
     type: "website",
     locale: "en",
+    twitter: {
+      card: "summary",
+      site: "@woatw_band",
+      creator: "@therobbrennan",
+    },
   },
   plugins: [
     'gatsby-plugin-react-helmet',
