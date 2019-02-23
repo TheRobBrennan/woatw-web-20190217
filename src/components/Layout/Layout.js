@@ -17,6 +17,11 @@ const Layout = ({ children, location }) => {
           description
           type
           locale
+          twitter {
+            card
+            site
+            creator
+          }
         }
       }
     }
