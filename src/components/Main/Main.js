@@ -18,7 +18,7 @@ class Main extends React.Component {
 
         <article id="welcome-to-seattle" className={`${this.props.article === 'welcome-to-seattle' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Welcome to Seattle</h2>
-          <iframe width="300px" height="320px" src="https://www.youtube.com/embed/G4qpFCWK6k8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="300px" height="320px" src="https://www.youtube.com/embed/G4qpFCWK6k8" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           <p>
             Let's light this fire<br/>
             And watch this whole world turn to ash<br/>
