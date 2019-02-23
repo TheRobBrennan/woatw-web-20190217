@@ -11,8 +11,8 @@ export const renderLayout = (data, content) => (
       meta={[
         { name: 'description', content: '' },
         { name: 'keywords', content: '' },
-        { name: 'og:description', content: data.site.siteMetadata.og.description},
-        { name: 'og:image', content: posterForUpcomingShow},
+        { property: 'og:description', content: data.site.siteMetadata.description},
+        { property: 'og:image', content: `${data.site.siteMetadata.siteUrl}${posterForUpcomingShow}`},
       ]}
     >
       <html lang="en" />

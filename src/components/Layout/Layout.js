@@ -13,9 +13,8 @@ const Layout = ({ children, location }) => {
       site {
         siteMetadata {
           title
-          og {
-            description
-          }
+          description
+          siteUrl
         }
       }
     }
