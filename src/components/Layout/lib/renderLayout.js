@@ -18,6 +18,10 @@ export const renderLayout = (data, content) => (
         { property: 'og:description', content: data.site.siteMetadata.description},
         { property: 'og:image', content: `${data.site.siteMetadata.siteUrl}${posterForUpcomingShow}`},
         { property: 'og:locale', content: data.site.siteMetadata.locale},
+        { name: 'twitter:card', content: data.site.siteMetadata.twitter.card},
+        { name: 'twitter:image:alt', content: `${data.site.siteMetadata.title} | ${data.site.siteMetadata.description}`},
+        { name: 'twitter:site', content: data.site.siteMetadata.twitter.site},
+        { name: 'twitter:creator', content: data.site.siteMetadata.twitter.creator},
       ]}
     >
       <html lang="en" />
