@@ -2,7 +2,6 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 // Images
-import posterForUpcomingShow from '../../../images/woatw/20190223-wyatt-olney-and-the-wreckage-tony-vs-everett-wa.jpg'
 import artisticMoth from '../../../images/woatw/artistic-moth.jpg'
 
 export const renderLayout = (data, content) => (
@@ -17,7 +16,7 @@ export const renderLayout = (data, content) => (
         { property: 'og:url', content: data.site.siteMetadata.siteUrl},
         { property: 'og:type', content: data.site.siteMetadata.type},
         { property: 'og:description', content: data.site.siteMetadata.description},
-        { property: 'og:image', content: `${data.site.siteMetadata.siteUrl}${posterForUpcomingShow}`},
+        { property: 'og:image', content: `${data.site.siteMetadata.siteUrl}${artisticMoth}`},
         { property: 'og:locale', content: data.site.siteMetadata.locale},
         { name: 'twitter:card', content: data.site.siteMetadata.twitter.card},
         { name: 'twitter:image:alt', content: `${data.site.siteMetadata.title} | ${data.site.siteMetadata.description}`},

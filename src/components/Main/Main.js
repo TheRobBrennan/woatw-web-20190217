@@ -3,8 +3,6 @@ import PropTypes from 'prop-types'
 
 // Images
 import bandPhoto from '../../images/woatw/20190105-backstage-el-corazon-seattle-wa.jpg'
-import posterForUpcomingShow from '../../images/woatw/20190223-wyatt-olney-and-the-wreckage-tony-vs-everett-wa.jpg'
-import posterForUpcomingShow2 from '../../images/woatw/20190330-wyatt-olney-and-the-wreckage-louie-gs-fife-wa.jpg'
 
 // Components
 import Subscribe from '../Subscribe'
@@ -117,27 +115,6 @@ class Main extends React.Component {
             <br />
             Originally released October 14th, 2017.
           </p>
-          {close}
-        </article>
-
-        <article
-          id='upcoming-shows'
-          className={`${
-            this.props.article === 'upcoming-shows' ? 'active' : ''
-          } ${this.props.articleTimeout ? 'timeout' : ''}`}
-          style={{ display: 'none' }}
-        >
-          <span className='image main'>
-            <img
-              src={posterForUpcomingShow}
-              alt="2019.02.23 Tony V's - Everett WA"
-            />
-            <hr />
-            <img
-              src={posterForUpcomingShow2}
-              alt="2019.03.30 Louie G's - Fife WA"
-            />
-          </span>
           {close}
         </article>
 
