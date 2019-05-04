@@ -34,6 +34,7 @@ class Main extends React.Component {
           <h2 className='major'>Welcome to Seattle</h2>
           <div class='video-container'>
             <iframe
+              title='[VIDEO] Welcome to Seattle'
               width='100%'
               height='480'
               src='https://www.youtube.com/embed/G4qpFCWK6k8'
@@ -150,6 +151,7 @@ class Main extends React.Component {
               <a
                 href='https://www.facebook.com/wyattolneyandthewreckage/'
                 target='_blank'
+                rel='noopener noreferrer'
                 className='icon fa-facebook'
               >
                 <span className='label'>Facebook</span>
@@ -159,6 +161,7 @@ class Main extends React.Component {
               <a
                 href='https://www.instagram.com/wyattolneyandthewreckage/'
                 target='_blank'
+                rel='noopener noreferrer'
                 className='icon fa-instagram'
               >
                 <span className='label'>Instagram</span>
