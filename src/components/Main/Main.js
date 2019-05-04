@@ -170,10 +170,9 @@ class Main extends React.Component {
           <strong>Wyatt Olney</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Lead
           vocals &amp; guitar
           <br />
-          <strong>Kyle Gibboney</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Vocals &amp; guitar
+          <strong>Kyle Gibboney</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Guitar &amp; vocals
           <br />
-          <strong>Malcolm Williams</strong>&nbsp; | Vocals &amp; bass
-          guitar
+          <strong>Malcolm Williams</strong>&nbsp; | Bass &amp; vocals
           <br />
           <strong>Rob Brennan</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Drums &amp; samples
           <p />
