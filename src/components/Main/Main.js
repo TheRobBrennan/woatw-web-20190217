@@ -2,13 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 // Images
-import bandPhoto from '../../images/woatw/20190105-backstage-el-corazon-seattle-wa.jpg'
+import bandPhoto from '../../images/woatw/20190430-jared-ream-woatw-photo.jpg'
 
 // Components
 import Subscribe from '../Subscribe'
 
 class Main extends React.Component {
-  render () {
+  render() {
     let close = (
       <div
         className='close'
@@ -28,7 +28,7 @@ class Main extends React.Component {
           id='welcome-to-seattle'
           className={`${
             this.props.article === 'welcome-to-seattle' ? 'active' : ''
-          } ${this.props.articleTimeout ? 'timeout' : ''}`}
+            } ${this.props.articleTimeout ? 'timeout' : ''}`}
           style={{ display: 'none' }}
         >
           <h2 className='major'>Welcome to Seattle</h2>
@@ -123,26 +123,31 @@ class Main extends React.Component {
           id='contact'
           className={`${this.props.article === 'contact' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
-          }`}
+            }`}
           style={{ display: 'none' }}
         >
           <h2 className='major'>Contact</h2>
           <span className='image main'>
-            <img
-              src={bandPhoto}
-              alt='2019.01.05 Backstage at El Corazon - Seattle WA'
-            />
+            <figure>
+              <img
+                src={bandPhoto}
+                alt='2019.04.30 Seattle Rehearsal - Seattle WA'
+              />
+              <figcaption>
+                Photography by <a href='https://jaredreamphoto.com' target='__blank'>Jared Ream Photography</a>
+              </figcaption>
+            </figure>
           </span>
           <h3 className='minor'>Wyatt Olney &amp; The Wreckage</h3>
-          <strong>Wyatt Olney</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Lead
+          <strong>Wyatt Olney</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Lead
           vocals &amp; guitar
           <br />
-          <strong>Kyle Gibboney</strong> | Vocals &amp; guitar
+          <strong>Kyle Gibboney</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Vocals &amp; guitar
           <br />
-          <strong>Willie Nelson</strong>&nbsp;&nbsp;&nbsp; | Vocals &amp; bass
+          <strong>Malcolm Williams</strong>&nbsp; | Vocals &amp; bass
           guitar
           <br />
-          <strong>Rob Brennan</strong>&nbsp;&nbsp;&nbsp; | Drums
+          <strong>Rob Brennan</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Drums &amp; samples
           <p />
           <Subscribe />
           <p />
