@@ -2,13 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 // Images
-import bandPhoto from '../../images/woatw/20190105-backstage-el-corazon-seattle-wa.jpg'
+import bandPhoto from '../../images/woatw/20190430-jared-ream-woatw-photo.jpg'
+import posterForUpcomingShow from '../../images/woatw/20190511-wyatt-olney-and-the-wreckage-louie-gs-fife-wa.jpg'
+import posterForUpcomingShow2 from '../../images/woatw/20190517-wyatt-olney-and-the-wreckage-club-sur-seattle-wa.jpg'
 
 // Components
 import Subscribe from '../Subscribe'
 
 class Main extends React.Component {
-  render () {
+  render() {
     let close = (
       <div
         className='close'
@@ -28,12 +30,13 @@ class Main extends React.Component {
           id='welcome-to-seattle'
           className={`${
             this.props.article === 'welcome-to-seattle' ? 'active' : ''
-          } ${this.props.articleTimeout ? 'timeout' : ''}`}
+            } ${this.props.articleTimeout ? 'timeout' : ''}`}
           style={{ display: 'none' }}
         >
           <h2 className='major'>Welcome to Seattle</h2>
           <div class='video-container'>
             <iframe
+              title='[VIDEO] Welcome to Seattle'
               width='100%'
               height='480'
               src='https://www.youtube.com/embed/G4qpFCWK6k8'
@@ -119,29 +122,60 @@ class Main extends React.Component {
         </article>
 
         <article
+          id='upcoming-shows'
+          className={`${
+            this.props.article === 'upcoming-shows' ? 'active' : ''
+            } ${this.props.articleTimeout ? 'timeout' : ''}`}
+          style={{ display: 'none' }}
+        >
+          <h2 className='major'>Upcoming shows</h2>
+          <span className='image main'>
+            <a href="https://www.facebook.com/events/348527825764842/" target="__blank">
+              <img
+                src={posterForUpcomingShow}
+                alt="2019.05.11 RadFest 2019 - Louie G's - Fife WA"
+              />
+            </a>
+            <hr />
+            <a href="https://www.facebook.com/events/1546690215463376/" target="__blank">
+              <img
+                src={posterForUpcomingShow2}
+                alt="2019.05.17 Rock Out ALS - Club Sur - Seattle WA"
+              />
+            </a>
+          </span>
+          {close}
+        </article>
+
+        <article
           id='contact'
           className={`${this.props.article === 'contact' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
-          }`}
+            }`}
           style={{ display: 'none' }}
         >
           <h2 className='major'>Contact</h2>
           <span className='image main'>
-            <img
-              src={bandPhoto}
-              alt='2019.01.05 Backstage at El Corazon - Seattle WA'
-            />
+            <figure>
+              <img
+                src={bandPhoto}
+                alt='2019.04.30 Seattle Rehearsal - Seattle WA'
+              />
+              <figcaption>
+                Photography by <a href='https://jaredreamphoto.com' target='__blank'>Jared Ream Photography</a>
+              </figcaption>
+            </figure>
           </span>
           <h3 className='minor'>Wyatt Olney &amp; The Wreckage</h3>
-          <strong>Wyatt Olney</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Lead
+          <strong>Wyatt Olney</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Lead
           vocals &amp; guitar
           <br />
-          <strong>Kyle Gibboney</strong> | Vocals &amp; guitar
+          <strong>Kyle Gibboney</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Vocals &amp; guitar
           <br />
-          <strong>Willie Nelson</strong>&nbsp;&nbsp;&nbsp; | Vocals &amp; bass
+          <strong>Malcolm Williams</strong>&nbsp; | Vocals &amp; bass
           guitar
           <br />
-          <strong>Rob Brennan</strong>&nbsp;&nbsp;&nbsp; | Drums
+          <strong>Rob Brennan</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Drums &amp; samples
           <p />
           <Subscribe />
           <p />
@@ -150,6 +184,7 @@ class Main extends React.Component {
               <a
                 href='https://www.facebook.com/wyattolneyandthewreckage/'
                 target='_blank'
+                rel='noopener noreferrer'
                 className='icon fa-facebook'
               >
                 <span className='label'>Facebook</span>
@@ -159,6 +194,7 @@ class Main extends React.Component {
               <a
                 href='https://www.instagram.com/wyattolneyandthewreckage/'
                 target='_blank'
+                rel='noopener noreferrer'
                 className='icon fa-instagram'
               >
                 <span className='label'>Instagram</span>
