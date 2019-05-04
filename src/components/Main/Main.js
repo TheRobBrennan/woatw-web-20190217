@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 
 // Images
 import bandPhoto from '../../images/woatw/20190430-jared-ream-woatw-photo.jpg'
+import posterForUpcomingShow from '../../images/woatw/20190511-wyatt-olney-and-the-wreckage-louie-gs-fife-wa.jpg'
+import posterForUpcomingShow2 from '../../images/woatw/20190517-wyatt-olney-and-the-wreckage-club-sur-seattle-wa.jpg'
 
 // Components
 import Subscribe from '../Subscribe'
@@ -116,6 +118,32 @@ class Main extends React.Component {
             <br />
             Originally released October 14th, 2017.
           </p>
+          {close}
+        </article>
+
+        <article
+          id='upcoming-shows'
+          className={`${
+            this.props.article === 'upcoming-shows' ? 'active' : ''
+            } ${this.props.articleTimeout ? 'timeout' : ''}`}
+          style={{ display: 'none' }}
+        >
+          <h2 className='major'>Upcoming shows</h2>
+          <span className='image main'>
+            <a href="https://www.facebook.com/events/348527825764842/" target="__blank">
+              <img
+                src={posterForUpcomingShow}
+                alt="2019.05.11 RadFest 2019 - Louie G's - Fife WA"
+              />
+            </a>
+            <hr />
+            <a href="https://www.facebook.com/events/1546690215463376/" target="__blank">
+              <img
+                src={posterForUpcomingShow2}
+                alt="2019.05.17 Rock Out ALS - Club Sur - Seattle WA"
+              />
+            </a>
+          </span>
           {close}
         </article>
 

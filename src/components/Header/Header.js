@@ -14,6 +14,7 @@ const Header = (props) => (
         <nav>
             <ul>
                 <li><a href="/#" onClick={(e) => {e.stopPropagation(); props.onOpenArticle('welcome-to-seattle')}}>Video</a></li>
+                <li><a href="/#" onClick={(e) => {e.stopPropagation(); props.onOpenArticle('upcoming-shows')}}>Upcoming shows</a></li>
                 <li><a href="/#" onClick={(e) => {e.stopPropagation(); props.onOpenArticle('contact')}}>Contact</a></li>
             </ul>
         </nav>
