@@ -35,7 +35,7 @@
     "docker:nuke:containers": "docker rm $(docker ps -aq)",
     "docker:refresh": "npm run docker:down && npm run docker:up",
     "docker:refresh:clean": "npm run docker:down && npm run docker:up:clean",
-    "deploy": "now",
+    "deploy": "now --target production",
     "now-build": "npm run build"
   },
   "devDependencies": {

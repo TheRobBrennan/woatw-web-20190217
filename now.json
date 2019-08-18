@@ -1,6 +1,7 @@
 {
   "version": 2,
   "name": "woatw-web-20190217",
+  "alias": "www.woatw.com",
   "builds": [
     {
       "src": "package.json",
