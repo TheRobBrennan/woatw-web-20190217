@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 // Images
 import bandPhoto from '../../images/woatw/20190430-jared-ream-woatw-photo.jpg'
-import posterForUpcomingShow from '../../images/woatw/20190906-wyatt-olney-and-the-wreckage-tony-vs-everett-wa.jpg'
+import posterForUpcomingShow from '../../images/woatw/20191012-migs-fest-iii-club-sur-seattle-wa.jpg'
 
 // Components
 import Subscribe from '../Subscribe'
@@ -129,10 +129,10 @@ class Main extends React.Component {
         >
           <h2 className='major'>Upcoming shows</h2>
           <span className='image main'>
-            <a href="https://www.facebook.com/events/425782601481606/" target="__blank">
+            <a href="https://www.facebook.com/events/337867480428132/" target="__blank">
               <img
                 src={posterForUpcomingShow}
-                alt="2019.09.06 Tony V's - Everett WA"
+                alt="2019.10.12 Migs Fest III - Club Sur - Seattle WA"
               />
             </a>
           </span>
