@@ -40,8 +40,7 @@ class Main extends React.Component {
               title='[VIDEO] Silver Bullet'
               width='100%'
               height='480'
-              /* TODO: Replace with revised Silver Bullet video */
-              src='https://www.youtube.com/embed/lMGvBkBqnnA'
+              src='https://www.youtube.com/embed/_nNYBsqWMV0'
               frameborder='0'
               allowfullscreen
             />
