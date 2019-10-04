@@ -1,7 +1,7 @@
 # Welcome
 This concept site for WOATW was based off the `gatsby-starter-dimension` starter pack available at [https://github.com/codebushi/gatsby-starter-dimension](https://github.com/codebushi/gatsby-starter-dimension)
 
-![src/images/screenshots/demo.png](src/images/screenshots/demo.png)
+![src/images/screenshots/demo-20191004.png](src/images/screenshots/demo-20191004.png)
 
 ## Installation
 To run the development site on your local machine, simply run `npm start`.
