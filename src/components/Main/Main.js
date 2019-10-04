@@ -26,13 +26,31 @@ class Main extends React.Component {
         id='main'
         style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
       >
+
         <article
-          id='welcome-to-seattle'
+          id='videos'
           className={`${
-            this.props.article === 'welcome-to-seattle' ? 'active' : ''
+            this.props.article === 'videos' ? 'active' : ''
             } ${this.props.articleTimeout ? 'timeout' : ''}`}
           style={{ display: 'none' }}
         >
+          <h2 className='major'>Silver Bullet</h2>
+          <div class='video-container'>
+            <iframe
+              title='[VIDEO] Silver Bullet'
+              width='100%'
+              height='480'
+              src='https://www.youtube.com/embed/_nNYBsqWMV0'
+              frameborder='0'
+              allowfullscreen
+            />
+          </div>
+          <p>
+            Copyright &copy; 2019 Fuzzy Rump Records. All rights reserved.
+            <br />
+            Originally released October 4th, 2019.
+          </p>
+
           <h2 className='major'>Welcome to Seattle</h2>
           <div class='video-container'>
             <iframe
@@ -44,75 +62,6 @@ class Main extends React.Component {
               allowfullscreen
             />
           </div>
-          <p>
-            Let's light this fire
-            <br />
-            And watch this whole world turn to ash
-            <br />
-            Burn your empires
-            <br />
-            And bury remains of the past
-            <br />
-            The end is near
-            <br />
-            As the pieces fall to place
-            <br />
-            We're standing here
-            <br />
-            On the edge of a new age
-            <br />
-          </p>
-          <p>
-            Now is our time
-            <br />
-            Time to ignite
-            <br />
-            And light the sky
-            <br />
-            Welcome to Seattle
-            <br />
-          </p>
-          <p>
-            Black rain will fall
-            <br />
-            Over the city that we've known
-            <br />
-            Tear down these walls
-            <br />
-            And you will never stand alone
-            <br />
-            The end is here
-            <br />
-            As the pieces fall to place
-            <br />
-            Fear not my dear
-            <br />
-            We were meant to fall from grace
-            <br />
-          </p>
-          <p>
-            Now is our time
-            <br />
-            TIme to ignite
-            <br />
-            This fire will rise
-            <br />
-            Welcome to Seattle
-            <br />
-          </p>
-          <p>
-            <strong>Welcome to Seattle motherfucker!!!!!!!</strong>
-          </p>
-          <p>
-            Now is our time
-            <br />
-            TIme to ignite
-            <br />
-            This fire will rise
-            <br />
-            Welcome to Seattle
-            <br />
-          </p>
           <p>
             Copyright &copy; 2017 Fuzzy Rump Records. All rights reserved.
             <br />
