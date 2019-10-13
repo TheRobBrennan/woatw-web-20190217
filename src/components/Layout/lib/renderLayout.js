@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 
 // Images
 // import artisticMoth from '../../../images/woatw/artistic-moth.jpg'
-import nextShow from '../../../images/woatw/20191012-migs-fest-iii-club-sur-seattle-wa.jpg'
+import nextShow from '../../../images/woatw/20191025-halloween-darrells-tavern-seattle-wa.jpg'
 
 export const renderLayout = (data, content) => (
   <>
