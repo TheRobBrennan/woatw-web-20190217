@@ -2,8 +2,8 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 // Images
-// import artisticMoth from '../../../images/woatw/artistic-moth.jpg'
-import nextShow from '../../../images/woatw/20191025-halloween-darrells-tavern-seattle-wa.jpg'
+import artisticMoth from '../../../images/woatw/artistic-moth.jpg'
+// import nextShow from '../../../images/woatw/20191025-halloween-darrells-tavern-seattle-wa.jpg'
 
 export const renderLayout = (data, content) => (
   <>
@@ -17,7 +17,7 @@ export const renderLayout = (data, content) => (
         { property: 'og:url', content: data.site.siteMetadata.siteUrl},
         { property: 'og:type', content: data.site.siteMetadata.type},
         { property: 'og:description', content: data.site.siteMetadata.description},
-        { property: 'og:image', content: `${data.site.siteMetadata.siteUrl}${nextShow}`},
+        { property: 'og:image', content: `${data.site.siteMetadata.siteUrl}${artisticMoth}`},
         { property: 'og:locale', content: data.site.siteMetadata.locale},
         { name: 'twitter:card', content: data.site.siteMetadata.twitter.card},
         { name: 'twitter:image:alt', content: `${data.site.siteMetadata.title} | ${data.site.siteMetadata.description}`},
@@ -25,7 +25,7 @@ export const renderLayout = (data, content) => (
         { name: 'twitter:creator', content: data.site.siteMetadata.twitter.creator},
       ]}
       link={[
-        { rel: 'shortcut icon', type: 'image/jpg', href: `${nextShow}` }
+        { rel: 'shortcut icon', type: 'image/jpg', href: `${artisticMoth}` }
       ]}
     >
       <html lang="en" />
