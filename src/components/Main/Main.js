@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 // Images
 import bandPhoto from '../../images/woatw/20190430-jared-ream-woatw-photo.jpg'
-import posterForUpcomingShow from '../../images/woatw/20191025-halloween-darrells-tavern-seattle-wa.jpg'
+// import posterForUpcomingShow from '../../images/woatw/20191025-halloween-darrells-tavern-seattle-wa.jpg'
 
 // Components
 import Subscribe from '../Subscribe'
@@ -77,14 +77,17 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className='major'>Upcoming shows</h2>
-          <span className='image main'>
+          Hang tight. We're busy working on writing a bunch of new material for our third album.
+          <p/>
+          <Subscribe />
+          {/* <span className='image main'>
             <a href="https://www.facebook.com/events/681505865659934/" target="__blank">
               <img
                 src={posterForUpcomingShow}
                 alt="2019.10.25 5th Annual Wreckage Halloween Bash - Darrell's Tavern - Seattle WA"
               />
             </a>
-          </span>
+          </span> */}
 
           {close}
         </article>
