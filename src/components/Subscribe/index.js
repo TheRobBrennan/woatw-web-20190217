@@ -69,8 +69,8 @@ export default class Subscribe extends React.Component {
         ) : (
           <div>
             <form id='email-capture' method='post' noValidate>
-              Please enter your e-mail address if you would like to subscribe to our newsletter
-              <br/>
+              Please enter your e-mail address if you would like to subscribe to our newsletter:
+              <p/>
               <input
                 style={{ backgroundColor: 'black' }}
                 onChange={this._handleEmailChange}
