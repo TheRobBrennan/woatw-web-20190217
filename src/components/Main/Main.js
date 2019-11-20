@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 // Images
 import bandPhoto from '../../images/woatw/20190430-jared-ream-woatw-photo.jpg'
-// import posterForUpcomingShow from '../../images/woatw/20191025-halloween-darrells-tavern-seattle-wa.jpg'
+import posterForUpcomingShow from '../../images/woatw/20191121-KISW-99.9-FM-Live-Day-Snoqualmie-Casino.jpg'
 
 // Components
 import Subscribe from '../Subscribe'
@@ -76,19 +76,23 @@ class Main extends React.Component {
             } ${this.props.articleTimeout ? 'timeout' : ''}`}
           style={{ display: 'none' }}
         >
-          <h2 className='major'>Upcoming shows</h2>
+          {/* <h2 className='major'>Upcoming shows</h2>
           Hang tight. We're busy working on writing a bunch of new material for our third album.
-          <p/>
-          <Subscribe />
-          {/* <span className='image main'>
-            <a href="https://www.facebook.com/events/681505865659934/" target="__blank">
+          <p/> */}
+          <h2 className='major'>KISW 99.9 FM Live Day 2019</h2>
+          We will be performing an 80s cover at 7:05am PST. Tune in to KISW 99.9 FM, or catch the live audio stream at <a href="https://kisw.radio.com" target="__blank">https://kisw.radio.com</a>
+          <p />
+          There will be a live video stream, but due to licensing restrictions <strong>video will not be available</strong> when the bands are performing their cover songs.
+          <span className='image main'>
+            <a href="https://kisw.radio.com/liveday" target="__blank">
               <img
                 src={posterForUpcomingShow}
-                alt="2019.10.25 5th Annual Wreckage Halloween Bash - Darrell's Tavern - Seattle WA"
+                alt="2019.11.29 - KISW 99.9 FM Live Day - Snoqualmie Casino - Snoqualmie WA"
               />
             </a>
-          </span> */}
-
+          </span>
+          <hr />
+          <Subscribe />
           {close}
         </article>
 
