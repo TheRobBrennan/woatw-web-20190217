@@ -23,8 +23,8 @@ module.exports = {
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'src/images/woatw/artistic-moth.jpg', // This path is relative to the root of the site.
-        // icon: 'src/images/woatw/20191025-halloween-darrells-tavern-seattle-wa.jpg',
+        // icon: 'src/images/woatw/artistic-moth.jpg', // This path is relative to the root of the site.
+        icon: 'src/images/woatw/20191121-KISW-99.9-FM-Live-Day-Snoqualmie-Casino.jpg',
       },
     },
     'gatsby-plugin-sass',
